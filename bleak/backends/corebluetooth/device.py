@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-from bleak.backends._manufacturers import MANUFACTURERS
-
 from Foundation import NSDictionary
-
 
 from bleak.backends.device import BLEDevice
 

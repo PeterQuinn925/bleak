@@ -22,7 +22,6 @@ from Foundation import (
 )
 from CoreBluetooth import (
     CBCharacteristicWriteWithResponse,
-    CBCharacteristicWriteWithoutResponse,
 )
 
 from bleak.exc import BleakError

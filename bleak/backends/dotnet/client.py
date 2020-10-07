@@ -33,18 +33,14 @@ from bleak.backends.dotnet.descriptor import BleakGATTDescriptorDotNet
 from BleakBridge import Bridge
 
 # Import of other CLR components needed.
-from System import UInt64, Object
+from System import UInt64
 from Windows.Foundation import IAsyncOperation, TypedEventHandler
-from Windows.Storage.Streams import DataReader, DataWriter, IBuffer
 from Windows.Devices.Enumeration import (
     DevicePairingResult,
     DevicePairingResultStatus,
     DeviceUnpairingResult,
     DeviceUnpairingResultStatus,
     DevicePairingKinds,
-    DevicePairingProtectionLevel,
-    DeviceInformationCustomPairing,
-    DevicePairingRequestedEventArgs,
 )
 from Windows.Devices.Bluetooth import (
     BluetoothLEDevice,
@@ -53,11 +49,9 @@ from Windows.Devices.Bluetooth import (
     BluetoothAddressType,
 )
 from Windows.Devices.Bluetooth.GenericAttributeProfile import (
-    GattDeviceService,
     GattDeviceServicesResult,
     GattCharacteristic,
     GattCharacteristicsResult,
-    GattDescriptor,
     GattDescriptorsResult,
     GattCommunicationStatus,
     GattReadResult,
