@@ -476,7 +476,7 @@ class BleakClientDotNet(BaseBleakClient):
         self,
         char_specifier: Union[BleakGATTCharacteristic, int, str, uuid.UUID],
         use_cached=False,
-        **kwargs
+        **kwargs,
     ) -> bytearray:
         """Perform read operation on the specified GATT characteristic.
 
@@ -701,7 +701,7 @@ class BleakClientDotNet(BaseBleakClient):
         self,
         char_specifier: Union[BleakGATTCharacteristic, int, str, uuid.UUID],
         callback: Callable[[int, bytearray], None],
-        **kwargs
+        **kwargs,
     ) -> None:
         """Activate notifications/indications on a characteristic.
 
